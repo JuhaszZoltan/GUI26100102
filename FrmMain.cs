@@ -27,25 +27,25 @@ namespace GUI26100102
                     buttons: MessageBoxButtons.OK);
                 return;
             }
-            txtResult.Text = $"{op1 / (float)op2:0.000}";
+            lblResult.Text = $"{op1 / (float)op2:0.000}";
         }
 
         private void BtnSub_Click(object? sender, EventArgs e)
         {
             if (!IsConvertible()) return;
-            txtResult.Text = $"{op1 - op2}";
+            lblResult.Text = $"{op1 - op2}";
         }
 
         private void BtnMult_Click(object? sender, EventArgs e)
         {
             if (!IsConvertible()) return;
-            txtResult.Text = $"{op1 * op2}";
+            lblResult.Text = $"{op1 * op2}";
         }
 
         private void BtnAdd_Click(object? sender, EventArgs e)
         {
             if (!IsConvertible()) return;
-            txtResult.Text = $"{op1 + op2}";
+            lblResult.Text = $"{op1 + op2}";
         }
 
         public bool IsConvertible()
@@ -61,7 +61,6 @@ namespace GUI26100102
                     buttons: MessageBoxButtons.OK);
                 return false;
             }
-
         }
     }
 }

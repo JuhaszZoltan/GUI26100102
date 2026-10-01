@@ -32,12 +32,12 @@
             lblInfo01 = new Label();
             txt2nbOp = new TextBox();
             lblInfo02 = new Label();
-            txtResult = new TextBox();
             lblInfo03 = new Label();
             btnAdd = new Button();
             btnSub = new Button();
             btnMult = new Button();
             btnDiv = new Button();
+            lblResult = new Label();
             SuspendLayout();
             // 
             // txt1stOp
@@ -75,13 +75,6 @@
             lblInfo02.Size = new Size(82, 19);
             lblInfo02.TabIndex = 1;
             lblInfo02.Text = "2ⁿᵈ operand";
-            // 
-            // txtResult
-            // 
-            txtResult.Location = new Point(131, 332);
-            txtResult.Name = "txtResult";
-            txtResult.Size = new Size(81, 32);
-            txtResult.TabIndex = 0;
             // 
             // lblInfo03
             // 
@@ -129,11 +122,22 @@
             btnDiv.Text = "division";
             btnDiv.UseVisualStyleBackColor = true;
             // 
+            // lblResult
+            // 
+            lblResult.BackColor = Color.White;
+            lblResult.BorderStyle = BorderStyle.Fixed3D;
+            lblResult.Location = new Point(95, 329);
+            lblResult.Name = "lblResult";
+            lblResult.Size = new Size(153, 34);
+            lblResult.TabIndex = 3;
+            lblResult.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(341, 395);
+            Controls.Add(lblResult);
             Controls.Add(btnDiv);
             Controls.Add(btnSub);
             Controls.Add(btnMult);
@@ -142,7 +146,6 @@
             Controls.Add(lblInfo03);
             Controls.Add(lblInfo01);
             Controls.Add(txt2nbOp);
-            Controls.Add(txtResult);
             Controls.Add(txt1stOp);
             Font = new Font("Segoe UI", 14F);
             Margin = new Padding(5);
@@ -158,11 +161,11 @@
         private Label lblInfo01;
         private TextBox txt2nbOp;
         private Label lblInfo02;
-        private TextBox txtResult;
         private Label lblInfo03;
         private Button btnAdd;
         private Button btnSub;
         private Button btnMult;
         private Button btnDiv;
+        private Label lblResult;
     }
 }
